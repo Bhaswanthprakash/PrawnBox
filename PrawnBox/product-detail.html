@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">Product Detail | PrawnBox</title>
+    <link rel="icon" href="image/prawnbox-favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-black">
+    <div id="site-header"></div>
+
+    <section
+      class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-start"
+    >
+      <!-- LEFT PROCESS CARDS -->
+      <div class="grid grid-cols-2 gap-6">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <img src="image/normal-prawns.jpg" class="w-full h-64 object-cover" />
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-orange-500">Raw Prawns</h3>
+            <p class="text-gray-600 mt-2">
+              Fresh whole prawns with natural shell presentation.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#f7f3ed] rounded-3xl shadow-xl overflow-hidden">
+          <img
+            src="image/peeling-prawns.png"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-orange-500">Peeling Process</h3>
+            <p class="text-gray-600 mt-2">
+              Shell removal and preparation for clean seafood use.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <img src="image/vein removal.png" class="w-full h-64 object-cover" />
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-orange-500">Deveining Process</h3>
+            <p class="text-gray-600 mt-2">
+              Removal of the digestive vein to ensure hygiene and premium
+              quality.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <img
+            src="image/cleaned-prawns.png"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-orange-500">Cleaned Prawns</h3>
+            <p class="text-gray-600 mt-2">
+              Peeled and deveined — ready for cooking.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+          <img src="image/packed-prawns.png" class="w-full h-64 object-cover" />
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-orange-500">Packed Prawns</h3>
+            <p class="text-gray-600 mt-2">Packed for retail and bulk supply.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div>
+        <div class="flex items-center gap-4 mb-4">
+          <img src="image/icon-prawnbox.png" class="h-12" />
+          <span class="text-orange-500 font-semibold"
+            >Premium Seafood Supply</span
+          >
+        </div>
+
+        <p
+          id="productType"
+          class="text-sm text-orange-500 font-semibold mb-2"
+        ></p>
+
+        <h1
+          id="productTitle"
+          class="text-4xl md:text-5xl font-extrabold text-orange-500 mb-6"
+        ></h1>
+
+        <p id="productDescription" class="text-gray-600 leading-8 mb-10"></p>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-[#f7f3ed] p-6 rounded-2xl">
+            <h3 class="font-bold text-orange-500 text-lg">Origin</h3>
+            <p id="origin" class="text-gray-600 mt-2"></p>
+          </div>
+
+          <div class="bg-[#f7f3ed] p-6 rounded-2xl">
+            <h3 class="font-bold text-orange-500 text-lg">Size Grade</h3>
+            <p id="sizeGrade" class="text-gray-600 mt-2"></p>
+          </div>
+
+          <div class="bg-[#f7f3ed] p-6 rounded-2xl">
+            <h3 class="font-bold text-orange-500 text-lg">Storage</h3>
+            <p id="storage" class="text-gray-600 mt-2"></p>
+          </div>
+
+          <div class="bg-[#f7f3ed] p-6 rounded-2xl">
+            <h3 class="font-bold text-orange-500 text-lg">Best For</h3>
+            <p id="bestFor" class="text-gray-600 mt-2"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script src="script.js"></script>
+
+    <script>
+      const productData = {
+        vannamei: {
+          60: {
+            type :"60 peices per 1 kg",
+            title: "60 Count Vannamei Prawns",
+            desc: "Our <b>60 count vannamei prawns</b> are large-size prawns known for better presentation, firm texture, and premium quality. Ideal for hotels, restaurants, and seafood buyers who prefer bigger prawns.",
+            origin: "Andhra Pradesh coastal farms",
+            size: "60 count large size",
+            best: "Hotels, restaurants, premium seafood buyers",
+          },
+          70: {
+            type :"70 peices per 1 kg",
+            title: "70 Count Vannamei Prawns",
+            desc: "Our <b>70 count vannamei prawns</b> offer a balanced medium-large size suitable for regular seafood supply, restaurant kitchens, and retail seafood counters.",
+            origin: "Andhra Pradesh coastal farms",
+            size: "70 count medium-large size",
+            best: "Restaurants, retailers, food service buyers",
+          },
+          80: {
+            type :"80 peices per 1 kg",
+            title: "80 Count Vannamei Prawns",
+            desc: "Our <b>80 count vannamei prawns</b> are popular medium-size prawns suitable for daily seafood menus, retail counters, and consistent kitchen requirements.",
+            origin: "Andhra Pradesh coastal farms",
+            size: "80 count medium size",
+            best: "Retail buyers, seafood counters, kitchens",
+          },
+          90: {
+            type :"90 peices per 1 kg",
+            title: "90 Count Vannamei Prawns",
+            desc: "Our <b>90 count vannamei prawns</b> are smaller-size prawns suitable for bulk cooking, catering needs, daily seafood menus, and wholesale supply.",
+            origin: "Andhra Pradesh coastal farms",
+            size: "90 count small size",
+            best: "Catering, bulk cooking, wholesale buyers",
+          },
+          100: {
+            type :"100 peices per 1 kg",
+            title: "100 Count Vannamei Prawns",
+            desc: "Our <b>100 count vannamei prawns</b> are economical small-size prawns ideal for bulk buyers, regular seafood preparation, and food businesses requiring better quantity.",
+            origin: "Andhra Pradesh coastal farms",
+            size: "100 count economical small size",
+            best: "Bulk buyers, hotels, regular seafood use",
+          },
+        },
+
+        tiger: {
+          20: {
+            type :"20 peices per 1 kg",
+            title: "20 Count Tiger Prawns",
+            desc: "Our <b>20 count tiger prawns</b> are large premium prawns known for bold stripes, firm texture, and excellent plate presentation. Best suited for high-value seafood demand.",
+            origin: "Trusted coastal aquaculture sources",
+            size: "20 count premium large size",
+            best: "Hotels, fine dining, premium seafood buyers",
+          },
+          30: {
+            type :"30 peices per 1 kg",
+            title: "30 Count Tiger Prawns",
+            desc: "Our <b>30 count tiger prawns</b> offer a balanced premium size with strong visual appeal, natural tiger stripes, and firm meat texture.",
+            origin: "Trusted coastal aquaculture sources",
+            size: "30 count medium-large size",
+            best: "Restaurants, seafood counters, catering buyers",
+          },
+          40: {
+            type :"40 peices per 1 kg",
+            title: "40 Count Tiger Prawns",
+            desc: "Our <b>40 count tiger prawns</b> are a practical tiger prawn size option for regular seafood menus, bulk kitchen usage, and premium tiger prawn quality.",
+            origin: "Trusted coastal aquaculture sources",
+            size: "40 count regular tiger prawn size",
+            best: "Bulk kitchens, restaurants, seafood menus",
+          },
+        },
+
+        scampi: {
+          10: {
+            type :"10 peices per 1 kg",
+            title: "10 Count Scampi Prawns",
+            desc: "Our <b>10 count scampi prawns</b> are extra-large freshwater scampi known for impressive size, firm texture, and premium presentation.",
+            origin: "Freshwater aquaculture farms",
+            size: "10 count extra-large size",
+            best: "Premium restaurants, special seafood orders",
+          },
+          20: {
+            type :"20 peices per 1 kg",
+            title: "20 Count Scampi Prawns",
+            desc: "Our <b>20 count scampi prawns</b> provide a premium freshwater prawn option with good size, firm bite, and strong seafood value.",
+            origin: "Freshwater aquaculture farms",
+            size: "20 count large size",
+            best: "Hotels, restaurants, premium retail buyers",
+          },
+          30: {
+            type :"30 peices per 1 kg",
+            title: "30 Count Scampi Prawns",
+            desc: "Our <b>30 count scampi prawns</b> are suitable for regular seafood supply, restaurant kitchens, retail counters, and buyers who want freshwater scampi quality.",
+            origin: "Freshwater aquaculture farms",
+            size: "30 count medium size",
+            best: "Restaurants, retailers, regular seafood supply",
+          },
+        },
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const type = params.get("type");
+      const count = params.get("count");
+
+      const product = productData[type]?.[count];
+
+      if (product) {
+        document.title = product.title + " | PrawnBox";
+        document.getElementById("productType").innerHTML =
+          "Product Type: " + product.type;
+        document.getElementById("productTitle").innerHTML = product.title;
+        document.getElementById("productDescription").innerHTML = product.desc;
+        document.getElementById("origin").innerHTML = product.origin;
+        document.getElementById("sizeGrade").innerHTML = product.size;
+        document.getElementById("storage").innerHTML =
+          "Frozen at -18°C or below";
+        document.getElementById("bestFor").innerHTML = product.best;
+      } else {
+        document.getElementById("productTitle").innerHTML = "Product Not Found";
+        document.getElementById("productDescription").innerHTML =
+          "Please go back to the products page and choose a valid product.";
+      }
+    </script>
+  </body>
+</html>

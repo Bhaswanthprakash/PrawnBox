@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Stores</title>
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div id="site-header"></div>
+
+    <section class="py-16 text-center bg-orange-50">
+      <h1 class="text-5xl font-bold text-orange-500">Our Stores</h1>
+      <p class="mt-4 text-xl text-gray-700">
+        We currently operate only in Hyderabad
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
+      <!-- Card -->
+      <a
+        href="https://www.google.com/maps/place/17%C2%B022'44.2%22N+78%C2%B021'57.0%22E/@17.3789539,78.3632698,17z/data=!3m1!4b1!4m4!3m3!8m2!3d17.3789539!4d78.3658447?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        class="cursor-pointer bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition block"
+      >
+        <div class="text-4xl mb-4">📍</div>
+        <h3 class="text-2xl font-bold text-orange-500">Narsingi Outlet</h3>
+        <p class="mt-3 text-gray-700 leading-8">
+          Strategically located in Narsingi, catering to growing urban demand
+          from hotels, retailers, and wholesale seafood buyers.
+        </p>
+        <p class="mt-4 text-orange-500 font-semibold">
+          Click here for store location
+        </p>
+      </a>
+      <a
+        href="https://www.google.com/maps/place/Vencobb+Fresh+Chicken/@17.4002354,78.3828921,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb941fc0158799:0xe1c46a8f891cf0dd!8m2!3d17.4002354!4d78.3828921!16s%2Fg%2F11rtv6ck74!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        class="cursor-pointer bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition block"
+      >
+        <div class="text-4xl mb-4">📍</div>
+
+        <h3 class="text-2xl font-bold text-orange-500">Manikonda Outlet</h3>
+
+        <p class="mt-3 text-gray-700 leading-8">
+          Located in the fast-growing Manikonda area, serving nearby residential
+          communities, restaurants, and retail buyers.
+        </p>
+
+        <p class="mt-4 text-orange-500 font-semibold">
+          Click here for store location
+        </p>
+      </a>
+
+      <div
+        onclick="
+          window.open('https://www.google.com/maps?q=Gachibowli Hyderabad')
+        "
+        class="cursor-pointer bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition"
+      >
+        <div class="text-4xl mb-4 animate-bounce">📍</div>
+        <h3 class="text-2xl font-bold text-orange-500">Gachibowli</h3>
+        <p class="mt-3 text-gray-700">
+          Located in Hyderabad’s IT hub, supplying fresh prawns to restaurants,
+          cloud kitchens, and premium outlets.
+        </p>
+        <p class="mt-4 text-orange-500 font-semibold">
+          Click here for store location
+        </p>
+      </div>
+
+      <div
+        onclick="
+          window.open('https://www.google.com/maps?q=Madhapur Hyderabad')
+        "
+        class="cursor-pointer bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition"
+      >
+        <div class="text-4xl mb-4 animate-bounce">📍</div>
+        <h3 class="text-2xl font-bold text-orange-500">Madhapur</h3>
+        <p class="mt-3 text-gray-700">
+          Serving the vibrant Madhapur area with high-quality prawns for
+          restaurants, retail buyers, and food businesses.
+        </p>
+        <p class="mt-4 text-orange-500 font-semibold">
+          Click here for store location
+        </p>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

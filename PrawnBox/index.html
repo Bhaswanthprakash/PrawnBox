@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrawnBox | Premium Prawn Supply</title>
+    <link rel="icon" type="image/png" href="image/prawnbox-favicon.png?v=999" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @keyframes scrollText {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @keyframes floatPrawn {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-18px) rotate(2deg);
+        }
+      }
+
+      @keyframes smokeMove {
+        0% {
+          transform: translateY(20px) scale(0.9);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.45;
+        }
+        100% {
+          transform: translateY(-80px) scale(1.3);
+          opacity: 0;
+        }
+      }
+
+      @keyframes productScroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .float-prawn {
+        animation: floatPrawn 4s ease-in-out infinite;
+      }
+
+      .smoke {
+        animation: smokeMove 6s ease-in-out infinite;
+      }
+
+      .product-track {
+        animation: productScroll 25s linear infinite;
+      }
+
+      .product-track:hover {
+        animation-play-state: paused;
+      }
+
+      a:focus,
+      a:active {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      a {
+        transition: all 0.3s ease;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-scroll {
+        display: flex;
+        width: max-content;
+        animation: scroll 25s linear infinite;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-black font-sans overflow-x-hidden">
+    <div id="site-header"></div>
+
+    <section class="relative min-h-[92vh] overflow-hidden bg-black">
+      <div class="absolute inset-0">
+        <div
+          class="hero-slide absolute inset-0 transition-opacity duration-1000"
+        >
+          <img
+            src="image/hero1.jpg"
+            class="w-full h-full object-cover"
+            alt="Prawn pond"
+          />
+        </div>
+
+        <div
+          class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+        >
+          <img
+            src="image/hero2.jpg"
+            class="w-full h-full object-cover"
+            alt="Aerator pond"
+          />
+        </div>
+
+        <div
+          class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+        >
+          <img
+            src="image/hero3.jpg"
+            class="w-full h-full object-cover"
+            alt="Prawn harvesting"
+          />
+        </div>
+
+        <div
+          class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+        >
+          <img
+            src="image/hero last.jpg"
+            class="w-full h-full object-cover"
+            alt="Fresh prawns"
+          />
+        </div>
+      </div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/35 to-black/5"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/10"
+      ></div>
+
+      <div
+        class="absolute -right-20 top-20 w-[420px] h-[420px] bg-orange-500/15 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute -left-20 bottom-0 w-[360px] h-[360px] bg-orange-400/10 rounded-full blur-3xl"
+      ></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 min-h-[92vh] flex items-center"
+      >
+        <div class="max-w-2xl">
+          <p
+            class="inline-flex items-center gap-2 bg-black/30 border border-orange-400/60 text-orange-300 px-5 py-2 rounded-full font-bold mb-6 backdrop-blur-md"
+          >
+            Premium Prawn Supply • Hyderabad
+          </p>
+
+          <h1
+            class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6"
+          >
+            Premium Prawns,
+            <span class="block text-orange-400"> Freshly Delivered </span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-gray-100 leading-8 mb-9 max-w-xl">
+            Sourced from Andhra Pradesh and supplied across Hyderabad with
+            freshness, care, and consistency.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="quote.html"
+              class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold hover:bg-orange-400 transition shadow-xl"
+            >
+              Export Quality
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPACT PRODUCTS SECTION -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500 mb-4">
+          Our Prawn Varieties
+        </h2>
+
+        <p class="text-base text-gray-600 max-w-2xl mx-auto">
+          Premium seafood varieties selected for restaurants, retailers, hotels,
+          and fresh seafood buyers.
+        </p>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- VANNAMEI PRAWN -->
+        <a
+          href="vannamei-prawns.html"
+          class="group bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition hover:-translate-y-1"
+        >
+          <div
+            class="h-44 w-full bg-white flex items-center justify-center p-4"
+          >
+            <img
+              src="image/Vannamei Prawns-home.png"
+              class="max-h-full max-w-full object-contain"
+              alt="Vannamei Prawn"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-orange-500 mb-2">
+              Vannamei Prawn
+            </h3>
+            <p class="text-sm text-gray-600 leading-6">
+              Farm-cultivated in coastal saltwater/brackish water ponds,
+              Vannamei prawns are popular for their clean taste, consistent
+              size, and reliable daily seafood supply.
+            </p>
+          </div>
+        </a>
+
+        <!-- TIGER PRAWN -->
+        <a
+          href="tiger-prawns.html"
+          class="group bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition hover:-translate-y-1"
+        >
+          <div
+            class="h-44 w-full bg-white flex items-center justify-center p-4"
+          >
+            <img
+              src="image/Tiger Prawns-home.png"
+              class="max-h-full max-w-full object-contain"
+              alt="Tiger Prawn"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-orange-500 mb-2">Tiger Prawn</h3>
+            <p class="text-sm text-gray-600 leading-6">
+              Cultivated in coastal saltwater/brackish water conditions, Tiger
+              prawns are known for bold stripes, firm texture, premium size, and
+              strong restaurant presentation.
+            </p>
+          </div>
+        </a>
+
+        <!-- SCAMPI PRAWN -->
+        <a
+          href="scampi-prawns.html"
+          class="group bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition hover:-translate-y-1"
+        >
+          <div
+            class="h-44 w-full bg-white flex items-center justify-center p-4"
+          >
+            <img
+              src="image/Scampi-home.png"
+              class="max-h-full max-w-full object-contain"
+              alt="Scampi Prawn"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-orange-500 mb-2">Scampi Prawn</h3>
+            <p class="text-sm text-gray-600 leading-6">
+              Freshwater-cultivated scampi prawns are valued for their large
+              claws, firm bite, premium appearance, and special seafood demand.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- PROCESS SECTION -->
+    <section class="py-20 bg-orange-50">
+      <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500 mb-4">
+          From Harvest to Pack – Our Quality Process
+        </h2>
+
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Every prawn goes through a carefully controlled process to ensure
+          freshness, hygiene, and premium quality before it reaches you.
+        </p>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="overflow-hidden">
+        <div class="flex gap-6 animate-scroll px-6">
+          <!-- RAW -->
+          <div
+            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="image/normal-prawns.jpg"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-orange-500">Raw Prawns</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Freshly harvested prawns maintained in natural condition.
+              </p>
+            </div>
+          </div>
+
+          <!-- PEELING -->
+          <div
+            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="image/peeling-prawns.png"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-orange-500">Peeling Process</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Outer shell removed carefully to preserve meat quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- DEVEINING -->
+          <div
+            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="image/vein removal.png"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-orange-500">
+                Deveining Process
+              </h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Removal of digestive vein for hygiene and clean taste.
+              </p>
+            </div>
+          </div>
+
+          <!-- CLEANED -->
+          <div
+            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="image/cleaned-prawns.png"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-orange-500">Cleaned Prawns</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Fully cleaned and ready for cooking or processing.
+              </p>
+            </div>
+          </div>
+
+          <!-- PACKED -->
+          <div
+            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="image/packed-prawns.png"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-orange-500">Packed Prawns</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Hygienically packed to maintain freshness and quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-6xl mx-auto px-6 py-24">
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <p class="text-sm text-orange-500 font-semibold mb-2">
+          Available Online
+        </p>
+
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-black tracking-tight"
+        >
+          Order Instantly
+        </h2>
+
+        <p class="text-gray-500 mt-4 text-lg">
+          Available on Zepto & Blinkit — fresh prawns delivered in minutes.
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- ZEPTO -->
+        <a
+          href="zepto.html"
+          class="group relative rounded-3xl p-10 bg-white border border-gray-100 shadow-xl overflow-hidden transition duration-500 hover:-translate-y-4 hover:shadow-2xl"
+        >
+          <!-- Gradient Glow -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+          ></div>
+
+          <div class="flex items-center gap-6 relative z-10">
+            <img src="image/zepto.png" class="h-16 object-contain" />
+
+            <div>
+              <h3 class="text-2xl font-bold text-black">Zepto</h3>
+              <p class="text-gray-500 text-sm">Ultra-fast grocery delivery</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- BLINKIT -->
+        <a
+          href="blinkit.html"
+          class="group relative rounded-3xl p-10 bg-white border border-gray-100 shadow-xl overflow-hidden transition duration-500 hover:-translate-y-4 hover:shadow-2xl"
+        >
+          <!-- Gradient Glow -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+          ></div>
+
+          <div class="flex items-center gap-6 relative z-10">
+            <img src="image/blinkit.png" class="h-16 object-contain" />
+
+            <div>
+              <h3 class="text-2xl font-bold text-black">Blinkit</h3>
+              <p class="text-gray-500 text-sm">Quick & reliable delivery</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- PROCESS SECTION -->
+    <section class="py-20 bg-orange-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-4xl mx-auto mb-14">
+          <p
+            class="inline-block bg-white text-orange-500 px-5 py-2 rounded-full font-bold mb-6 shadow"
+          >
+            From Pond to Plate
+          </p>
+
+          <h2 class="text-5xl font-extrabold text-orange-500 mb-6">
+            A Supply Story Customers Can Trust
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 text-center hover:-translate-y-3 transition"
+          >
+            <div class="text-6xl mb-5 animate-bounce">🌊</div>
+            <h3 class="text-2xl font-extrabold text-orange-500 mb-3">
+              Cultivation
+            </h3>
+            <p class="text-gray-700 leading-8">
+              Prawns are sourced through reliable aquaculture supply regions.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 text-center hover:-translate-y-3 transition"
+          >
+            <div class="text-6xl mb-5 animate-pulse">⚙️</div>
+            <h3 class="text-2xl font-extrabold text-orange-500 mb-3">
+              Handling
+            </h3>
+            <p class="text-gray-700 leading-8">
+              Focused handling, packing, and frozen supply discipline.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 text-center hover:-translate-y-3 transition"
+          >
+            <div class="text-6xl mb-5 animate-bounce">📦</div>
+            <h3 class="text-2xl font-extrabold text-orange-500 mb-3">
+              Delivery
+            </h3>
+            <p class="text-gray-700 leading-8">
+              Designed for Hyderabad outlets, restaurants, and bulk buyers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <div
+        class="relative overflow-hidden bg-orange-500 text-white rounded-3xl shadow-xl p-10 md:p-16"
+      >
+        <div
+          class="absolute -right-20 -top-20 w-80 h-80 bg-white/20 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute -left-20 -bottom-20 w-80 h-80 bg-black/20 rounded-full blur-3xl"
+        ></div>
+
+        <div
+          class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-5">
+              Ready to supply your seafood business?
+            </h2>
+            <p class="text-lg leading-8 max-w-3xl">
+              Send your prawn type, quantity, packing preference, and delivery
+              location. Our team will guide you with suitable supply details.
+            </p>
+          </div>
+
+          <a
+            href="quote.html"
+            class="bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition whitespace-nowrap"
+          >
+            Get Quote
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- FSSAI CERTIFIED SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div
+        class="bg-orange-50 border border-orange-100 rounded-3xl shadow-xl p-10 md:p-14 text-center hover:-translate-y-2 transition"
+      >
+        <div
+          class="mx-auto mb-6 w-24 h-24 rounded-full bg-white shadow-lg flex items-center justify-center animate-bounce"
+        >
+          <span class="text-5xl">📜</span>
+        </div>
+
+        <p
+          class="inline-block bg-white text-orange-500 px-5 py-2 rounded-full font-bold mb-5 shadow"
+        >
+          Certified Quality
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-extrabold text-orange-500 mb-5">
+          FSSAI Certified Prawn Supply
+        </h2>
+
+        <p
+          class="text-lg md:text-xl text-gray-700 leading-9 max-w-4xl mx-auto mb-6"
+        >
+          PrawnBox follows strict food safety and hygiene standards to ensure
+          premium quality prawns for restaurants, retailers, hotels, and seafood
+          buyers.
+        </p>
+
+        <!-- LICENSE NUMBER -->
+        <div
+          class="inline-block bg-white border border-orange-200 px-6 py-3 rounded-full shadow-md"
+        >
+          <p class="text-gray-700 font-semibold">
+            FSSAI License No:
+            <span class="text-orange-500 font-bold">13626999000258</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center mb-14">
+        <p
+          class="inline-block bg-orange-50 text-orange-500 px-5 py-2 rounded-full font-bold mb-6 shadow"
+        >
+          Customer Reviews
+        </p>
+
+        <h2 class="text-5xl font-extrabold text-orange-500 mb-6">
+          What Our Customers Say
+        </h2>
+
+        <p class="text-xl text-gray-700">
+          Trusted by restaurants, retailers, and seafood buyers across
+          Hyderabad.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- REVIEW 1 -->
+        <div
+          class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 hover:-translate-y-2 transition"
+        >
+          <h4 class="font-bold">Niranjan</h4>
+          <div class="text-orange-500 text-xl mb-3">★★★★★</div>
+          <p class="text-gray-700 leading-8 mb-5">
+            Very fresh prawns and consistent supply. Quality is much better than
+            local market.
+          </p>
+          <h4 class="font-bold"></h4>
+        </div>
+
+        <!-- REVIEW 2 -->
+        <div
+          class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-8 hover:-translate-y-2 transition"
+        >
+          <h4 class="font-bold">Sandeep</h4>
+          <div class="text-orange-500 text-xl mb-3">★★★★★</div>
+          <p class="text-gray-700 leading-8 mb-5">
+            Clean packaging and proper communication. Very reliable for bulk
+            orders.
+          </p>
+        </div>
+
+        <!-- REVIEW 3 -->
+        <div
+          class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 hover:-translate-y-2 transition"
+        >
+          <h4 class="font-bold">Jaya Prakash</h4>
+          <div class="text-orange-500 text-xl mb-3">★★★★★</div>
+          <p class="text-gray-700 leading-8 mb-5">
+            Good quality prawns for my seafood shop. Customers are satisfied.
+          </p>
+        </div>
+
+        <!-- REVIEW 4 -->
+        <div
+          class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-8 hover:-translate-y-2 transition"
+        >
+          <h4 class="font-bold">Cherrish Mourya</h4>
+          <div class="text-orange-500 text-xl mb-3">★★★★★</div>
+          <p class="text-gray-700 leading-8 mb-5">
+            Timely delivery and proper frozen condition. Highly recommended
+            supplier.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

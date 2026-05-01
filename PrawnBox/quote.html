@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrawnBox | Get Quote</title>
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="image/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="image/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-black font-sans">
+    <div id="site-header"></div>
+
+    <section class="py-20 text-center bg-orange-50">
+      <div class="max-w-5xl mx-auto px-6">
+        <p
+          class="inline-block bg-white text-orange-500 px-5 py-2 rounded-full font-bold mb-6 shadow"
+        >
+          Quick Supply Quote
+        </p>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold text-orange-500 mb-6">
+          Tell Us What You Need
+        </h1>
+
+        <p class="text-xl text-gray-700 leading-9">
+          Share your prawn type, quantity, packing preference, and delivery
+          area. Our team will prepare a suitable supply quotation for you.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-start"
+    >
+      <!-- LEFT INFO SIDE -->
+      <div class="space-y-8">
+        <div
+          class="bg-white rounded-3xl shadow-xl border border-gray-100 p-10 hover:-translate-y-2 transition"
+        >
+          <div class="mb-6 flex justify-start">
+            <div
+              class="h-20 w-auto overflow-hidden rounded-2xl shadow-xl border border-orange-100"
+            >
+              <img
+                src="image/icon-prawnbox.png"
+                alt="PrawnBox Logo"
+                class="h-full w-auto object-cover scale-125"
+              />
+            </div>
+          </div>
+          <h2 class="text-4xl font-extrabold text-orange-500 mb-5">
+            What Can You Request?
+          </h2>
+          <p class="text-gray-700 text-lg leading-8">
+            You can request quotes for 60 Count, 70 Count, 80 Count, 90 Count,
+            100 Count, and Tiger Prawns based on your business needs.
+          </p>
+        </div>
+
+        <div
+          class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-10 hover:-translate-y-2 transition"
+        >
+          <div class="text-6xl mb-5 animate-pulse">📦</div>
+          <h2 class="text-4xl font-extrabold text-orange-500 mb-5">
+            Packing Options
+          </h2>
+          <p class="text-gray-700 text-lg leading-8">
+            Mention your preferred packing such as Retail pack, food service pack, or master carton.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl shadow-xl border border-gray-100 p-10 hover:-translate-y-2 transition"
+        >
+          <div class="text-6xl mb-5 animate-bounce">🚚</div>
+          <h2 class="text-4xl font-extrabold text-orange-500 mb-5">
+            Hyderabad Supply Support
+          </h2>
+          <p class="text-gray-700 text-lg leading-8">
+            We help restaurants, hotels, retailers, wholesalers, caterers, and
+            seafood distributors with dependable prawn supply.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM SIDE -->
+      <div class="lg:sticky lg:top-32">
+        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-10">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="text-5xl animate-pulse">📝</div>
+            <h2 class="text-4xl font-extrabold text-orange-500">
+              Request Your Quote
+            </h2>
+          </div>
+
+          <p class="text-gray-700 text-lg leading-8 mb-8">
+            Fill the form below and our team will contact you with availability,
+            packing options, and supply details.
+          </p>
+
+          <form
+            action="https://formsubmit.co/tejasetraders@yahoo.com"
+            method="POST"
+            class="grid md:grid-cols-2 gap-5"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <input
+              type="text"
+              name="company"
+              placeholder="Company / Outlet Name"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <select
+              name="product"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500 text-gray-600"
+            >
+              <option value="">Select Prawn Type</option>
+              <option>Vannamei-Prawn</option>
+              <option>Tiger-Prawn</option>
+              <option>Scampi-Prawn</option>
+            </select>
+
+            <select
+              name="buyer_type"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500 text-gray-600"
+            >
+              <option value="">Buyer Type</option>
+              <option>Restaurant</option>
+              <option>Hotel</option>
+              <option>Retail Store</option>
+              <option>Wholesale Buyer</option>
+              <option>Catering Business</option>
+              <option>Seafood Distributor</option>
+            </select>
+
+            <input
+              type="text"
+              name="quantity"
+              placeholder="Required Quantity"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <input
+              type="text"
+              name="location"
+              placeholder="Delivery Location"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <input
+              type="text"
+              name="packing"
+              placeholder="Preferred Packing"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <input
+              type="text"
+              name="delivery_time"
+              placeholder="Expected Delivery Time"
+              class="border border-gray-300 rounded-2xl px-6 py-4 text-lg outline-none focus:border-orange-500"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Add product count/size, recurring order details, packing preference, or any special requirement"
+              class="md:col-span-2 border border-gray-300 rounded-2xl px-6 py-4 text-lg min-h-44 outline-none focus:border-orange-500"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="md:col-span-2 bg-orange-500 text-black py-4 rounded-full font-bold text-lg hover:bg-orange-400 transition"
+            >
+              Submit Quote Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 pb-16">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-8 text-center hover:-translate-y-2 transition"
+        >
+          <div class="text-5xl mb-4 animate-bounce">✅</div>
+          <h3 class="text-2xl font-extrabold text-orange-500 mb-3">Step 1</h3>
+          <p class="text-gray-700 leading-8">
+            Submit your product type, quantity, and packing requirement.
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 text-center hover:-translate-y-2 transition"
+        >
+          <div class="text-5xl mb-4 animate-pulse">📞</div>
+          <h3 class="text-2xl font-extrabold text-orange-500 mb-3">Step 2</h3>
+          <p class="text-gray-700 leading-8">
+            Our team contacts you to confirm availability and delivery details.
+          </p>
+        </div>
+
+        <div
+          class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-8 text-center hover:-translate-y-2 transition"
+        >
+          <div class="text-5xl mb-4 animate-bounce">🚚</div>
+          <h3 class="text-2xl font-extrabold text-orange-500 mb-3">Step 3</h3>
+          <p class="text-gray-700 leading-8">
+            You receive a suitable quote and supply support for your business.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 pb-16">
+      <div
+        class="bg-orange-500 text-white rounded-3xl shadow-xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+        <div>
+          <h2 class="text-4xl font-extrabold mb-4">
+            Need urgent seafood supply?
+          </h2>
+          <p class="text-lg leading-8">
+            You can also contact us directly for urgent requirements, recurring
+            orders, and business supply discussions.
+          </p>
+        </div>
+
+        <a
+          href="contact.html"
+          class="bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition"
+        >
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
