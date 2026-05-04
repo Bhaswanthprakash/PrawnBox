@@ -177,3 +177,30 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   }
 });
+
+function scrollProcess(direction) {
+  const slider = document.getElementById("processSlider");
+  const scrollAmount = 320;
+
+  slider.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".hero-slide");
+  let currentSlide = 0;
+
+  if (slides.length > 0) {
+    slides[0].classList.remove("opacity-0");
+
+    setInterval(() => {
+      slides[currentSlide].classList.add("opacity-0");
+
+      currentSlide = (currentSlide + 1) % slides.length;
+
+      slides[currentSlide].classList.remove("opacity-0");
+    }, 3200);
+  }
+});
