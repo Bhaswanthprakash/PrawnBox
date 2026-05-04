@@ -74,19 +74,14 @@
       a {
         transition: all 0.3s ease;
       }
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
       }
 
-      .animate-scroll {
-        display: flex;
-        width: max-content;
-        animation: scroll 25s linear infinite;
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     </style>
   </head>
@@ -278,103 +273,129 @@
         </a>
       </div>
     </section>
-    <!-- PROCESS SECTION -->
-    <section class="py-20 bg-orange-50">
-      <div class="max-w-7xl mx-auto px-6 text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-orange-500 mb-4">
+    <section class="py-16 bg-orange-50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-orange-500 mb-4">
           From Harvest to Pack – Our Quality Process
         </h2>
 
-        <p class="text-gray-600 max-w-2xl mx-auto">
+        <p class="text-gray-700 mb-10 max-w-2xl mx-auto">
           Every prawn goes through a carefully controlled process to ensure
           freshness, hygiene, and premium quality before it reaches you.
         </p>
-      </div>
 
-      <!-- SLIDER -->
-      <div class="overflow-hidden">
-        <div class="flex gap-6 animate-scroll px-6">
-          <!-- RAW -->
+        <div class="relative">
+          <!-- soft fade edges -->
           <div
-            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+            class="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-orange-50 to-transparent z-10"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-orange-50 to-transparent z-10"
+          ></div>
+
+          <!-- LEFT BUTTON -->
+          <button
+            onclick="scrollProcess(-1)"
+            class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-xl border border-orange-100 text-orange-500 text-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white hover:scale-110 transition"
+            aria-label="Previous"
           >
-            <img
-              src="image/normal-prawns.jpg"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg font-bold text-orange-500">Raw Prawns</h3>
-              <p class="text-sm text-gray-600 mt-2">
-                Freshly harvested prawns maintained in natural condition.
-              </p>
+            ‹
+          </button>
+
+          <!-- SCROLL AREA -->
+          <div
+            id="processSlider"
+            class="flex gap-8 overflow-x-auto scroll-smooth px-14 py-4 no-scrollbar"
+          >
+            <!-- CARD 1 -->
+            <div
+              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+            >
+              <img
+                src="image/normal-prawns.jpg"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-bold text-orange-500">Raw Prawns</h3>
+                <p class="text-gray-600 text-sm mt-2">
+                  Freshly harvested from farms.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+            >
+              <img
+                src="image/peeling-prawns.png"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-bold text-orange-500">
+                  Peeling Process
+                </h3>
+                <p class="text-gray-600 text-sm mt-2">
+                  Shell removed carefully.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+            >
+              <img
+                src="image/vein removal.png"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-bold text-orange-500">
+                  Deveining Process
+                </h3>
+                <p class="text-gray-600 text-sm mt-2">Cleaned for hygiene.</p>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div
+              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+            >
+              <img
+                src="image/cleaned-prawns.png"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-bold text-orange-500">
+                  Cleaned Prawns
+                </h3>
+                <p class="text-gray-600 text-sm mt-2">Ready for cooking.</p>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div
+              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+            >
+              <img
+                src="image/packed-prawns.png"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-5 text-left">
+                <h3 class="text-xl font-bold text-orange-500">Packed Prawns</h3>
+                <p class="text-gray-600 text-sm mt-2">Sealed for freshness.</p>
+              </div>
             </div>
           </div>
 
-          <!-- PEELING -->
-          <div
-            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
+          <!-- RIGHT BUTTON -->
+          <button
+            onclick="scrollProcess(1)"
+            class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-xl border border-orange-100 text-orange-500 text-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white hover:scale-110 transition"
+            aria-label="Next"
           >
-            <img
-              src="image/peeling-prawns.png"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg font-bold text-orange-500">Peeling Process</h3>
-              <p class="text-sm text-gray-600 mt-2">
-                Outer shell removed carefully to preserve meat quality.
-              </p>
-            </div>
-          </div>
-
-          <!-- DEVEINING -->
-          <div
-            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
-          >
-            <img
-              src="image/vein removal.png"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg font-bold text-orange-500">
-                Deveining Process
-              </h3>
-              <p class="text-sm text-gray-600 mt-2">
-                Removal of digestive vein for hygiene and clean taste.
-              </p>
-            </div>
-          </div>
-
-          <!-- CLEANED -->
-          <div
-            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
-          >
-            <img
-              src="image/cleaned-prawns.png"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg font-bold text-orange-500">Cleaned Prawns</h3>
-              <p class="text-sm text-gray-600 mt-2">
-                Fully cleaned and ready for cooking or processing.
-              </p>
-            </div>
-          </div>
-
-          <!-- PACKED -->
-          <div
-            class="min-w-[250px] bg-white rounded-2xl shadow-lg overflow-hidden"
-          >
-            <img
-              src="image/packed-prawns.png"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="text-lg font-bold text-orange-500">Packed Prawns</h3>
-              <p class="text-sm text-gray-600 mt-2">
-                Hygienically packed to maintain freshness and quality.
-              </p>
-            </div>
-          </div>
+            ›
+          </button>
         </div>
       </div>
     </section>
@@ -388,7 +409,7 @@
         <h2
           class="text-4xl md:text-5xl font-extrabold text-black tracking-tight"
         >
-          Order Instantly
+          Grab It Fresh
         </h2>
 
         <p class="text-gray-500 mt-4 text-lg">
@@ -511,7 +532,7 @@
         >
           <div>
             <h2 class="text-4xl md:text-5xl font-extrabold mb-5">
-              Ready to supply your seafood business?
+              Submit Your Requirement
             </h2>
             <p class="text-lg leading-8 max-w-3xl">
               Send your prawn type, quantity, packing preference, and delivery
@@ -627,7 +648,7 @@
         <div
           class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-8 hover:-translate-y-2 transition"
         >
-          <h4 class="font-bold">Cherrish Mourya</h4>
+          <h4 class="font-bold">Charakam Mourya</h4>
           <div class="text-orange-500 text-xl mb-3">★★★★★</div>
           <p class="text-gray-700 leading-8 mb-5">
             Timely delivery and proper frozen condition. Highly recommended
@@ -640,3 +661,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
