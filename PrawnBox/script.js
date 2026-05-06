@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <div class="bg-orange-500 text-black text-sm font-bold overflow-hidden">
         <div class="whitespace-nowrap px-4 py-2" style="animation: scrollText 22s linear infinite;">
-          Premium Prawn Supply from Andhra Pradesh • Freshness You Can Trust • Supplying Across Hyderabad • No Middleman • FSSAI Certified • Quality Assured Seafood • Procured and Marketed by Tejase Traders 
+          Premium Prawn Supply from Andhra Pradesh • Freshness You Can Trust • Supplying Across Hyderabad • No Middleman • FSSAI Certified • Quality Assured Seafood • Procured and Marketed by M/s. Tejase traders pvt ltd 
         </div>
       </div>
     `;
