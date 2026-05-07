@@ -169,25 +169,25 @@
           </p>
 
           <div class="flex flex-wrap gap-4">
-  <a
-    href="quote.html"
-    class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold hover:bg-orange-400 transition shadow-xl"
-  >
-    Export Quality
-  </a>
+            <a
+              href="quote.html"
+              class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold hover:bg-orange-400 transition shadow-xl"
+            >
+              Export Quality
+            </a>
 
-  <span
-    class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold shadow-xl"
-  >
-    High In Protein
-  </span>
+            <span
+              class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold shadow-xl"
+            >
+              High In Protein
+            </span>
 
-  <span
-    class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold shadow-xl"
-  >
-    No Antibiotics
-  </span>
-</div>
+            <span
+              class="bg-orange-500 text-black px-8 py-4 rounded-full font-extrabold shadow-xl"
+            >
+              No Antibiotics
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -297,18 +297,18 @@
         </p>
 
         <div class="relative">
-          <!-- soft fade edges -->
+          <!-- fade edges only for smaller screens -->
           <div
-            class="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-orange-50 to-transparent z-10"
+            class="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-orange-50 to-transparent z-10 xl:hidden"
           ></div>
           <div
-            class="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-orange-50 to-transparent z-10"
+            class="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-orange-50 to-transparent z-10 xl:hidden"
           ></div>
 
-          <!-- LEFT BUTTON -->
+          <!-- LEFT BUTTON - hidden on large desktop -->
           <button
             onclick="scrollProcess(-1)"
-            class="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-xl border border-orange-100 text-orange-500 text-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white hover:scale-110 transition"
+            class="2xl:hidden absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-xl border border-orange-100 text-orange-500 text-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white hover:scale-110 transition"
             aria-label="Previous"
           >
             ‹
@@ -317,18 +317,20 @@
           <!-- SCROLL AREA -->
           <div
             id="processSlider"
-            class="flex gap-8 overflow-x-auto scroll-smooth px-14 py-4 no-scrollbar"
+            class="flex gap-8 overflow-x-auto scroll-smooth px-14 py-4 no-scrollbar 2xl:overflow-visible 2xl:px-0 2xl:justify-center 2xl:gap-6"
           >
             <!-- CARD 1 -->
             <div
-              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+              class="min-w-[300px] 2xl:min-w-0 2xl:w-[220px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
             >
               <img
                 src="image/normal-prawns.jpg"
-                class="w-full h-52 object-cover"
+                class="w-full h-52 2xl:h-40 object-cover"
               />
               <div class="p-5 text-left">
-                <h3 class="text-xl font-bold text-orange-500">Raw Prawns</h3>
+                <h3 class="text-xl 2xl:text-lg font-bold text-orange-500">
+                  Raw Prawns
+                </h3>
                 <p class="text-gray-600 text-sm mt-2">
                   Freshly harvested from farms.
                 </p>
@@ -337,14 +339,14 @@
 
             <!-- CARD 2 -->
             <div
-              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+              class="min-w-[300px] 2xl:min-w-0 2xl:w-[220px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
             >
               <img
                 src="image/peeling-prawns.png"
-                class="w-full h-52 object-cover"
+                class="w-full h-52 2xl:h-40 object-cover"
               />
               <div class="p-5 text-left">
-                <h3 class="text-xl font-bold text-orange-500">
+                <h3 class="text-xl 2xl:text-lg font-bold text-orange-500">
                   Peeling Process
                 </h3>
                 <p class="text-gray-600 text-sm mt-2">
@@ -355,14 +357,14 @@
 
             <!-- CARD 3 -->
             <div
-              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+              class="min-w-[300px] 2xl:min-w-0 2xl:w-[220px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
             >
               <img
                 src="image/vein removal.png"
-                class="w-full h-52 object-cover"
+                class="w-full h-52 2xl:h-40 object-cover"
               />
               <div class="p-5 text-left">
-                <h3 class="text-xl font-bold text-orange-500">
+                <h3 class="text-xl 2xl:text-lg font-bold text-orange-500">
                   Deveining Process
                 </h3>
                 <p class="text-gray-600 text-sm mt-2">Cleaned for hygiene.</p>
@@ -371,14 +373,14 @@
 
             <!-- CARD 4 -->
             <div
-              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+              class="min-w-[300px] 2xl:min-w-0 2xl:w-[220px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
             >
               <img
                 src="image/cleaned-prawns.png"
-                class="w-full h-52 object-cover"
+                class="w-full h-52 2xl:h-40 object-cover"
               />
               <div class="p-5 text-left">
-                <h3 class="text-xl font-bold text-orange-500">
+                <h3 class="text-xl 2xl:text-lg font-bold text-orange-500">
                   Cleaned Prawns
                 </h3>
                 <p class="text-gray-600 text-sm mt-2">Ready for cooking.</p>
@@ -387,23 +389,25 @@
 
             <!-- CARD 5 -->
             <div
-              class="min-w-[300px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
+              class="min-w-[300px] 2xl:min-w-0 2xl:w-[220px] bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-2xl transition duration-300"
             >
               <img
                 src="image/packed-prawns.png"
-                class="w-full h-52 object-cover"
+                class="w-full h-52 2xl:h-40 object-cover"
               />
               <div class="p-5 text-left">
-                <h3 class="text-xl font-bold text-orange-500">Packed Prawns</h3>
+                <h3 class="text-xl 2xl:text-lg font-bold text-orange-500">
+                  Packed Prawns
+                </h3>
                 <p class="text-gray-600 text-sm mt-2">Sealed for freshness.</p>
               </div>
             </div>
           </div>
 
-          <!-- RIGHT BUTTON -->
+          <!-- RIGHT BUTTON - hidden on large desktop -->
           <button
             onclick="scrollProcess(1)"
-            class="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-xl border border-orange-100 text-orange-500 text-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white hover:scale-110 transition"
+            class="2xl:hidden absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-xl border border-orange-100 text-orange-500 text-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white hover:scale-110 transition"
             aria-label="Next"
           >
             ›
@@ -660,7 +664,7 @@
         <div
           class="bg-orange-50 rounded-3xl shadow-xl border border-orange-100 p-8 hover:-translate-y-2 transition"
         >
-          <h4 class="font-bold">Charakam Mourya</h4>
+          <h4 class="font-bold">Cherrish Mourya</h4>
           <div class="text-orange-500 text-xl mb-3">★★★★★</div>
           <p class="text-gray-700 leading-8 mb-5">
             Timely delivery and proper frozen condition. Highly recommended
@@ -673,4 +677,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
